@@ -4,6 +4,7 @@
 # Allow only project files
 !.gitignore
 !CLAUDE.md
+!index.html
 
 # Game projects
 !wave-shooter/
