@@ -63,9 +63,9 @@ const POWERUPS = [
 function newGame() {
   player = {
     x: W / 2, y: H / 2, r: 14,
-    speed: 190, hp: 5, maxHp: 5,
-    dmg: 1, fireRate: 350,
-    bSpeed: 500, bRadius: 5,
+    speed: 210, hp: 8, maxHp: 8,
+    dmg: 1, fireRate: 250,
+    bSpeed: 540, bRadius: 6,
     multiShot: 1, piercing: false,
     iframes: 0, angle: 0
   };
@@ -81,7 +81,7 @@ function newGame() {
 
 function spawnWave() {
   wave++;
-  const count = 3 + wave * 2;
+  const count = 3 + wave;
   for (let i = 0; i < count; i++) spawnZombie();
 }
 
@@ -94,9 +94,9 @@ function spawnZombie() {
   else if (side === 2) { x = Math.random() * W; y = H + pad; }
   else { x = -pad; y = Math.random() * H; }
 
-  const hp    = Math.ceil(2 + wave * 1.8 + Math.random() * wave);
-  const speed = 50 + wave * 7 + Math.random() * 15;
-  const r     = 13 + Math.min(Math.floor(wave / 4) * 2, 10);
+  const hp    = Math.ceil(1 + wave * 1.2 + Math.random());
+  const speed = 42 + wave * 5 + Math.random() * 10;
+  const r     = 13 + Math.min(Math.floor(wave / 5) * 2, 8);
   zombies.push({ x, y, r, hp, maxHp: hp, speed });
 }
 
