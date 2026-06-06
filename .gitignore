@@ -1,0 +1,17 @@
+# Ignore everything in the home directory by default
+*
+
+# Allow only project files
+!.gitignore
+!CLAUDE.md
+
+# Game projects
+!wave-shooter/
+!wave-shooter/**
+
+# Claude memory files
+!.claude/
+!.claude/projects/
+!.claude/projects/C--Users-Luca/
+!.claude/projects/C--Users-Luca/memory/
+!.claude/projects/C--Users-Luca/memory/**
