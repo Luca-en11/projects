@@ -10,6 +10,10 @@
 !wave-shooter/
 !wave-shooter/**
 
+# Lithos project
+!lithos/
+!lithos/**
+
 # Claude memory files
 !.claude/
 !.claude/projects/
