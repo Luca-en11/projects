@@ -14,6 +14,17 @@
 !lithos/
 !lithos/**
 
+# Dental clinic project
+!dental-clinic/
+!dental-clinic/**
+
+# Flow SaaS landing page
+!flow/
+!flow/**
+flow/node_modules/
+flow/dist/
+flow/dist-standalone/
+
 # Claude memory files
 !.claude/
 !.claude/projects/
